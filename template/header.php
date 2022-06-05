@@ -103,11 +103,17 @@
                     <div class="col-sm-12">
                         <div class="header-section">
                             <div class="logo">
-                                <a href="" title="Turks & Caicos Islands Airports Authority"><img src="assets/images/logo.png" alt="Turks & Caicos Islands Airports Authority"></a>
+                                <a href="" title="Turks & Caicos Islands Airports Authority">
+                                    <img src="assets/images/logo.png" alt="Turks & Caicos Islands Airports Authority">
+                                    <img src="assets/images/logo-flag.gif" alt="Turks & Caicos Islands Airports Authority">
+                                </a>
                             </div>
                             <div class="menu mobile-menu">
                                 <div class="menu_mobile_visibility">
-                                    <a href="" title="Turks & Caicos Islands Airports Authority"><img src="assets/images/logo.png" alt="Turks & Caicos Islands Airports Authority"></a>
+                                    <a href="" title="Turks & Caicos Islands Airports Authority">
+                                    <img src="assets/images/logo.png" alt="Turks & Caicos Islands Airports Authority">
+                                    <img src="assets/images/logo-flag.gif" alt="Turks & Caicos Islands Airports Authority">
+                                    </a>
                                 </div>
                                 <ul>
                                 <li><a href="javascript:void(0);" title="Home" class="active">Home</a></li>

@@ -9,7 +9,7 @@
     position: absolute;
     right: 15px;
     text-align: center;
-    top: 30px;
+    top: 22px;
     transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
     z-index: 99;
@@ -65,9 +65,8 @@
     margin-right: 10px;
 }
 
-.nav-mobile a {
-    color: #2F3192;
-    font-size: 16px;
+.nav-mobile a .flag-logo {
+    max-width: 50px;
 }
 
 .nav-mobile a:hover,
@@ -87,7 +86,7 @@
 
 .nav-mobile>ul li>a {
     display: inline-block;
-    font-size: 14 px;
+    font-size: 14px;
     margin: 10px 0;
     padding: 0;
     text-shadow: none;
