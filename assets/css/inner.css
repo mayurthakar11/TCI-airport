@@ -93,7 +93,7 @@
     top: 0;
     height: 35px;
     width: 35px;
-    background: #2F3192;
+    background: #002D46;
     color: #fff;
     font-size: 16px;
     display: inline-block;
@@ -347,14 +347,14 @@
 
 .thankyou .thankyou-main .thankyou-title {
     font-size: 80px;
-    color: #2F3192;
+    color: #002D46;
     font-weight: 600;
     line-height: 110%;
 }
 
 .thankyou .thankyou-main .thankyou-message {
     font-size: 18px;
-    color: #2F3192;
+    color: #002D46;
     margin: 20px 0;
 }
 
@@ -407,7 +407,7 @@
 }
 
 .not-found-page .error-center .right-side .title {
-    color: #01a8e7;
+    color: #c79a44;
     font-size: 100px;
     line-height: 140%;
 }
@@ -424,7 +424,7 @@
     color: #002236;
     max-width: 450px;
     margin: 30px 0;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 @media(max-width:1199px) {
@@ -503,14 +503,14 @@
 }
 
 .checkout-list li span {
-    color: #2F3192;
+    color: #002D46;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .checkout-list li span.final-total {
     font-size: 18px;
-    color: #01a8e7;
+    color: #C79A44;
     font-weight: 600;
 }
 
@@ -521,7 +521,7 @@
 
 .payment-types .radio label {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 10px;
 }
 
@@ -534,8 +534,8 @@
 }
 
 .top-link a {
-    color: #01a8e7;
-    font-weight: 600;
+    color: #C79A44;
+    font-weight: 500;
 }
 
 .checkout-main .desc p {
@@ -543,8 +543,8 @@
 }
 
 .checkout-main .desc a {
-    color: #01a8e7;
-    font-weight: 600;
+    color: #C79A44;
+    font-weight: 500;
 }
 
 @media(max-width:1199px) {

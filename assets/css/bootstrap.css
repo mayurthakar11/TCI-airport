@@ -239,8 +239,8 @@ th {
 
 @media print {
     *,
-     :after,
-     :before {
+    :after,
+    :before {
         color: #000!important;
         text-shadow: none!important;
         background: 0 0!important;
@@ -1512,7 +1512,7 @@ h4,
 h5,
 h6 {
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.1;
     color: inherit
 }

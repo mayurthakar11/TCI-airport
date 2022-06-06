@@ -1,5 +1,5 @@
 #nav-mobile-btn {
-    background-color: #2F3192;
+    background-color: #01a8e7;
     border: 0 none;
     border-radius: 4px;
     color: #fff;
@@ -9,7 +9,7 @@
     position: absolute;
     right: 15px;
     text-align: center;
-    top: 22px;
+    top: 55px;
     transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
     z-index: 99;
@@ -214,7 +214,7 @@
         background: rgba(0, 0, 0, .5);
     }
     #wrapper.open #nav-mobile-btn span {
-        background: #fff;
+        background: #01a8e7;
         transition: all 0.2s ease 0s;
         -webkit-transition: all 0.2s ease 0s;
         -moz-transition: all 0.2s ease 0s;
@@ -223,7 +223,7 @@
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
-        top: 6px;
+        top: 7px;
     }
     #wrapper.open #nav-mobile-btn span:nth-child(2) {
         -webkit-transform: rotate(-45deg);
@@ -282,12 +282,12 @@
         z-index: 99;
         float: right;
         width: 40px !important;
-        height: 44px !important;
+        height: 40px !important;
         top: 0 !important;
     }
     .is-open:before {
         position: absolute;
-        content: "\e900";
+        content: "\e902";
         color: #01a8e7;
         font-family: 'icomoon';
         left: 0;

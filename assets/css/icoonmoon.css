@@ -22,106 +22,110 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-clock1:before {
-    content: "\e919";
-}
-
-.icon-bottom-arrow:before {
+.icon-search:before {
     content: "\e900";
 }
 
-.icon-chat:before {
+.icon-close:before {
     content: "\e901";
 }
 
-.icon-clock:before {
+.icon-bottom-arrow:before {
     content: "\e902";
 }
 
-.icon-cloudy-day:before {
+.icon-chat:before {
     content: "\e903";
 }
 
-.icon-computer:before {
+.icon-clock:before {
     content: "\e904";
 }
 
-.icon-coronavirus:before {
+.icon-cloudy-day:before {
     content: "\e905";
 }
 
-.icon-engineer:before {
+.icon-computer:before {
     content: "\e906";
 }
 
-.icon-facebook:before {
+.icon-coronavirus:before {
     content: "\e907";
 }
 
-.icon-interest:before {
+.icon-engineer:before {
     content: "\e908";
 }
 
-.icon-left-arrow:before {
+.icon-facebook:before {
     content: "\e909";
 }
 
-.icon-left-big-arrow:before {
+.icon-interest:before {
     content: "\e90a";
 }
 
-.icon-linkedin:before {
+.icon-left-arrow:before {
     content: "\e90b";
 }
 
-.icon-map:before {
+.icon-left-big-arrow:before {
     content: "\e90c";
 }
 
-.icon-pause:before {
+.icon-linkedin:before {
     content: "\e90d";
 }
 
-.icon-phone:before {
+.icon-map:before {
     content: "\e90e";
 }
 
-.icon-plane:before {
+.icon-pause:before {
     content: "\e90f";
 }
 
-.icon-play:before {
+.icon-phone:before {
     content: "\e910";
 }
 
-.icon-right-arrow:before {
+.icon-plane:before {
     content: "\e911";
 }
 
-.icon-right-big-arrow:before {
+.icon-play:before {
     content: "\e912";
 }
 
-.icon-right-plane:before {
+.icon-right-arrow:before {
     content: "\e913";
 }
 
-.icon-search:before {
+.icon-right-big-arrow:before {
     content: "\e914";
 }
 
-.icon-team:before {
+.icon-right-plane:before {
     content: "\e915";
 }
 
-.icon-top-arrow:before {
+.icon-team:before {
     content: "\e916";
 }
 
-.icon-twitter:before {
+.icon-top-arrow:before {
     content: "\e917";
 }
 
-.icon-youtube:before {
+.icon-twitter:before {
     content: "\e918";
+}
+
+.icon-youtube:before {
+    content: "\e919";
+}
+
+.icon-clock1:before {
+    content: "\e91a";
 }
