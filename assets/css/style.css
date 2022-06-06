@@ -963,7 +963,7 @@ font-family: 'Nunito Sans', sans-serif;
     @media (min-width: 1200px) {
         .header-flightbtn a:hover {
             color: #ffffff;
-            background: #001821;
+            background: #01a8e7;
         }
         .header-section .menu {
             display: flex;
@@ -1759,12 +1759,12 @@ font-family: 'Nunito Sans', sans-serif;
         top: 21px;
         font-size: 16px;
         color: #ffffff;
-        -webkit-transition: all 0.3s ease-in-out;
-        -khtml-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -khtml-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
     
     .beautiful-sec-main .tabControl .right-tab-list .nav-pills li.active::after {
@@ -1809,12 +1809,12 @@ font-family: 'Nunito Sans', sans-serif;
         display: flex;
         border-top: 1px dashed #80878F;
         position: relative;
-        -webkit-transition: all 0.3s ease-in-out;
-        -khtml-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -khtml-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
     
     .beautiful-sec-main .tabControl .right-tab-list .nav-pills li.active a {
@@ -1827,7 +1827,7 @@ font-family: 'Nunito Sans', sans-serif;
     .beautiful-sec-main .tabControl .right-tab-list .nav-pills li.active a::before,
     .beautiful-sec-main .tabControl .right-tab-list .nav-pills li a::before {
         position: absolute;
-        content: "\e90b";
+        content: "\e90c";
         font-family: icomoon!important;
         left: 20px;
         top: 20px;
@@ -1837,12 +1837,12 @@ font-family: 'Nunito Sans', sans-serif;
         -webkit-transform: translateX(25px);
         -ms-transform: translateX(25px);
         opacity: 0;
-        -webkit-transition: all 0.3s ease-in-out;
-        -khtml-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -khtml-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
     
     .beautiful-sec-main .tabControl .left-tab-list {
@@ -2184,10 +2184,11 @@ font-family: 'Nunito Sans', sans-serif;
     
     @media(min-width:1200px) {
         .travelling-sec .travel-box .box-link a:hover {
-            color: #01A8E7;
+            color: #2f3192;
         }
         .travelling-sec .travel-box:hover {
-            background: #f2f2f2;
+            background: rgb(1 168 231 / 50%);
+            box-shadow: 0px 6px 20px #68686829;
         }
     }
     
@@ -2268,6 +2269,12 @@ font-family: 'Nunito Sans', sans-serif;
         border-radius: 6px;
         background: #ffffff;
         padding: 20px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -khtml-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
     
     .info-slider-main .image {
@@ -2343,6 +2350,9 @@ font-family: 'Nunito Sans', sans-serif;
     }
     
     @media (min-width:1200px) {
+        .info-box:hover {
+            transform: translateY(-5px);
+        }
         .info-box:hover .thumbnail_container img {
             transform: scale(1.1);
         }
