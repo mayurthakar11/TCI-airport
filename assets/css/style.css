@@ -1371,6 +1371,9 @@ font-family: 'Nunito Sans', sans-serif;
             right: 0;
             margin: 0 auto;
         }
+        .home-banner-02 .carousel-caption .banner-btn .primary_button {
+            color: #ffffff !important;
+        }
     }
     
     @media(max-width:767px) {
