@@ -25,7 +25,7 @@ font-family: 'Nunito Sans', sans-serif;
         text-transform: none;
         letter-spacing: 0;
         word-spacing: 0;
-        cursor: url(../images/plane-svg.png), auto;
+        /* cursor: url(../images/plane-svg.png), auto; */
     }
     
     .ac-loader {
@@ -1195,7 +1195,7 @@ font-family: 'Nunito Sans', sans-serif;
         top: 0px;
         left: 0px;
         bottom: 0px;
-        right: 0px;
+        right: auto;
         text-shadow: none;
     }
     
@@ -1299,12 +1299,48 @@ font-family: 'Nunito Sans', sans-serif;
         line-height: 40px;
     }
     
+    .home-banner-02 .message-btn {
+        position: absolute;
+        bottom: 60px;
+        right: 116px;
+    }
+    
+    .home-banner-02 .message-btn a {
+        color: #ffffff;
+        height: 60px;
+        width: 60px;
+        line-height: 70px;
+        background: #2F3192;
+        display: inline-block;
+        text-align: center;
+        border-radius: 100%;
+        font-size: 30px;
+    }
+    
+    .home-banner-02 .video-container {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .home-banner-02 iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    
     @media(min-width:1200px) {
         .home-banner-02 .carousel-control {
             opacity: 0;
         }
         .home-banner-02:hover .carousel-control {
             opacity: 1;
+        }
+        .home-banner-02 .message-btn a:hover {
+            background: #01a8e7;
         }
     }
     
@@ -1355,11 +1391,25 @@ font-family: 'Nunito Sans', sans-serif;
         .home-banner-02 .carousel-caption .banner-btn {
             margin-top: 20px;
         }
+        .home-banner-02 .message-btn {
+            bottom: 30px;
+            right: 30px;
+        }
+        .home-banner-02 .message-btn a {
+            height: 60px;
+            width: 60px;
+            line-height: 70px;
+            font-size: 24px;
+        }
     }
     
     @media(max-width:479px) {
         .home-banner-02 .carousel-caption .h-b_item .title {
             font-size: 24px;
+        }
+        .home-banner-02 .message-btn {
+            bottom: 20px;
+            right: 20px;
         }
     }
     /*Banner css end*/
@@ -1759,6 +1809,7 @@ font-family: 'Nunito Sans', sans-serif;
         top: 21px;
         font-size: 16px;
         color: #ffffff;
+        letter-spacing: -1.5px;
         -webkit-transition: all 0.5s ease-in-out;
         -khtml-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
@@ -1976,8 +2027,17 @@ font-family: 'Nunito Sans', sans-serif;
     /* About section S */
     
     .about-sec {
+        position: relative;
         padding: 100px 0;
-        background-image: url(../images/about-bg.png);
+        z-index: 1;
+    }
+    
+    .about-sec .about-bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -2187,8 +2247,7 @@ font-family: 'Nunito Sans', sans-serif;
             color: #2f3192;
         }
         .travelling-sec .travel-box:hover {
-            background: rgb(1 168 231 / 50%);
-            box-shadow: 0px 6px 20px #68686829;
+            box-shadow: 2px 2px 15px 0 rgba(135, 135, 135, 0.4);
         }
     }
     
@@ -2280,6 +2339,18 @@ font-family: 'Nunito Sans', sans-serif;
     .info-slider-main .image {
         border-radius: 6px;
         overflow: hidden;
+        position: relative;
+    }
+    
+    .info-slider-main .image .img-label {
+        position: absolute;
+        font-size: 14px;
+        color: #ffffff;
+        background: #01A8E7;
+        top: 10px;
+        left: 10px;
+        z-index: 1;
+        padding: 7px 9px;
     }
     
     .info-slider-main.owl-carousel .owl-stage-outer {
@@ -2320,12 +2391,16 @@ font-family: 'Nunito Sans', sans-serif;
         color: #001821;
         font-weight: 700;
         margin: 10px 0;
+        height: 40px;
+        overflow: hidden;
     }
     
     .info-slider-main .info-box .box-content .desc {
         font-size: 14px;
         color: #001821;
         line-height: 160%;
+        height: 70px;
+        overflow: hidden;
     }
     
     .info-slider-main .info-box .box-content .desc ul li {
@@ -2759,17 +2834,35 @@ font-family: 'Nunito Sans', sans-serif;
         .footer-box .footer-add {
             font-size: 12px;
         }
-        .footer-main .footer-box .menu-link {
-            margin-top: 10px;
-        }
         .footer-main .footer-box {
             min-width: 100% !important;
+        }
+        .footer-main .footer-box:nth-child(2n) {
+            min-width: 200px !important;
+        }
+        .footer-main .footer-box:nth-child(3n) {
+            min-width: 340px !important;
+        }
+        .footer-main .footer-box .menu-link {
+            margin-top: 10px;
         }
         .footer-main .footer-box .menu-link li a {
             font-size: 12px;
         }
         .footer-main .footer-box .menu-link li+li {
             margin-top: 10px;
+        }
+    }
+    
+    @media(max-width:479px) {
+        .footer-main .footer-box {
+            min-width: 100% !important;
+        }
+        .footer-main .footer-box:nth-child(2n) {
+            min-width: 240px !important;
+        }
+        .footer-main .footer-box:nth-child(3n) {
+            min-width: 300px !important;
         }
     }
     /* Footer css E */

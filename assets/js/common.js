@@ -74,33 +74,3 @@ moment.locale("en", {
 //     minDate: moment()
 // });
 // calender E
-
-
-// video auto play S
-// $(window).on("load", function() {
-//     var deviceAgent = navigator.userAgent.toLowerCase();
-//     var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
-//     var vid = document.getElementById("video");
-//     var isAndroid = /(android)/i.test(navigator.userAgent);
-//     if (agentID) {
-//         window.setInterval(function() {
-//             if (vid.paused) {
-//                 //alert("paused");
-//                 $('#rotate-video').removeClass('pause');
-//             }
-//         }, 100);
-//         $('#rotate-video').on("click", function() {
-//             if ($(this).hasClass("pause")) {
-//                 $(this).removeClass('pause');
-//                 vid.pause();
-//             } else {
-//                 $(this).addClass('pause');
-//                 vid.play();
-//             }
-//         });
-//     }
-//     if (isAndroid) {
-//         $('#rotate-video').addClass('noAndroid');
-//     }
-// });
-// video auto play E
