@@ -896,14 +896,28 @@ font-family: 'Nunito Sans', sans-serif;
         color: #fff;
     }
     
+    .header-section .logo {
+        max-width: 170px;
+    }
+    
     .header-section .logo a {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .header-section .logo a .logo-head {
+        max-width: 116px;
     }
     
     .header-section .logo a .flag-logo {
         max-width: 50px !important;
         height: 30px;
+    }
+    
+    .header-section .logo a .logo-text {
+        font-size: 9px;
+        color: #2F3192;
     }
     
     .header-section .menu ul li {
