@@ -65,8 +65,23 @@
     margin-right: 10px;
 }
 
-.nav-mobile a .flag-logo {
+.menu_mobile_visibility a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_mobile_visibility a .flag-logo {
     max-width: 50px;
+    margin-left: 5px;
+    max-height: 30px;
+}
+
+.menu_mobile_visibility a .logo-text {
+    font-size: 9px;
+    color: #2F3192;
+    font-weight: 600;
 }
 
 .nav-mobile a:hover,
@@ -287,7 +302,7 @@
     }
     .is-open:before {
         position: absolute;
-        content: "\e902";
+        content: "\e903";
         color: #01a8e7;
         font-family: 'icomoon';
         left: 0;

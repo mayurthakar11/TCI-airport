@@ -74,3 +74,15 @@ moment.locale("en", {
 //     minDate: moment()
 // });
 // calender E
+
+
+// mcustom scollbar S
+$(window).on("load", function() {
+    $("#scroll-bar-custom").mCustomScrollbar({
+        axis: "x", // horizontal scrollbar s
+
+    });
+
+});
+
+// mcustom scollbar E

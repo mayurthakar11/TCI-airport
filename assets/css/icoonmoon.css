@@ -22,48 +22,32 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-search:before {
+.icon-mail:before {
     content: "\e900";
 }
 
-.icon-close:before {
+.icon-search:before {
     content: "\e901";
 }
 
-.icon-bottom-arrow:before {
+.icon-close:before {
     content: "\e902";
 }
 
-.icon-chat:before {
+.icon-bottom-arrow:before {
     content: "\e903";
 }
 
-.icon-clock:before {
+.icon-chat:before {
     content: "\e904";
 }
 
-.icon-cloudy-day:before {
+.icon-clock:before {
     content: "\e905";
-}
-
-.icon-computer:before {
-    content: "\e906";
-}
-
-.icon-coronavirus:before {
-    content: "\e907";
-}
-
-.icon-engineer:before {
-    content: "\e908";
 }
 
 .icon-facebook:before {
     content: "\e909";
-}
-
-.icon-interest:before {
-    content: "\e90a";
 }
 
 .icon-left-arrow:before {
@@ -108,10 +92,6 @@
 
 .icon-right-plane:before {
     content: "\e915";
-}
-
-.icon-team:before {
-    content: "\e916";
 }
 
 .icon-top-arrow:before {

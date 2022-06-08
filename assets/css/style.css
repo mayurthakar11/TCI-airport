@@ -1,6 +1,5 @@
     @import url(../css/bootstrap-select.css);
     @import url(../css/icoonmoon.css);
-    @import url(../css/inner.css);
     @import url(../css/cms.css);
     /*fonts*/
     /*
@@ -628,7 +627,7 @@ font-family: 'Nunito Sans', sans-serif;
     
     .icon-building {
         font-size: 40px;
-        color: #cbb58c;
+        color: #01A8E7;
     }
     
     .error,
@@ -897,7 +896,7 @@ font-family: 'Nunito Sans', sans-serif;
     }
     
     .header-section .logo {
-        max-width: 170px;
+        max-width: 180px;
     }
     
     .header-section .logo a {
@@ -911,13 +910,15 @@ font-family: 'Nunito Sans', sans-serif;
     }
     
     .header-section .logo a .flag-logo {
-        max-width: 50px !important;
-        height: 30px;
+        max-width: 50px;
+        margin-left: 5px;
+        max-height: 30px;
     }
     
     .header-section .logo a .logo-text {
         font-size: 9px;
         color: #2F3192;
+        font-weight: 600;
     }
     
     .header-section .menu ul li {
@@ -952,7 +953,7 @@ font-family: 'Nunito Sans', sans-serif;
     .header-flightbtn {
         display: flex;
         align-items: center;
-        margin-left: 20px;
+        margin-left: 40px;
     }
     
     .header-flightbtn a {
@@ -992,8 +993,11 @@ font-family: 'Nunito Sans', sans-serif;
             -o-animation: smoothScroll .5s forwards;
             animation: smoothScroll .5s forwards;
         }
-        .fixed.main-header .header-section .logo img {
-            max-width: 120px;
+        .fixed.main-header .header-section .logo .logo-head {
+            max-width: 80px;
+        }
+        .fixed.main-header .header-section .logo a .flag-logo {
+            max-width: 40px;
         }
         .fixed.main-header .header-top {
             display: none;
@@ -1092,7 +1096,7 @@ font-family: 'Nunito Sans', sans-serif;
         .menu>ul>.dropdown>a:after {
             display: inline-block;
             margin-left: 5px;
-            content: "\e902";
+            content: "\e903";
             top: 19px;
             right: -8px;
             position: absolute;
@@ -1124,12 +1128,8 @@ font-family: 'Nunito Sans', sans-serif;
     }
     
     @media (max-width: 1200px) {
-        .header-section .logo img {
-            max-width: 80px;
-        }
         .header-section .logo a .flag-logo {
-            max-width: 30px !important;
-            height: 20px;
+            max-width: 30px;
         }
         .main-header .header-top .top-left {
             display: none;
@@ -1632,7 +1632,7 @@ font-family: 'Nunito Sans', sans-serif;
     .bootstrap-select.btn-group .dropdown-toggle .caret::after {
         font-family: 'icomoon';
         position: absolute;
-        content: "\e902";
+        content: "\e903";
         top: -2px;
     }
     
@@ -2038,6 +2038,9 @@ font-family: 'Nunito Sans', sans-serif;
         .beautiful-sec-main .tabControl .right-tab-list .title {
             font-size: 16px;
         }
+        .beautiful-sec-main .tabControl .right-tab-list .nav-pills li:before {
+            font-size: 14px;
+        }
         .beautiful-sec-main .tabControl .right-tab-list .nav-pills li a {
             font-size: 14px;
         }
@@ -2051,7 +2054,22 @@ font-family: 'Nunito Sans', sans-serif;
     
     @media(max-width:767px) {
         .beautiful-sec-main .tabControl {
-            flex-direction: column;
+            flex-direction: column-reverse;
+        }
+        .beautiful-sec-main .tabControl .right-tab-list {
+            min-width: 100%;
+        }
+        .beautiful-sec-main .tabControl .right-tab-list #scroll-bar-custom {
+            overflow: hidden;
+            white-space: nowrap;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .beautiful-sec-main .tabControl .right-tab-list .nav-pills {
+            flex-direction: inherit;
+        }
+        .beautiful-sec-main .tabControl .right-tab-list .nav-pills li {
+            width: auto;
         }
         .beautiful-sec-main .tabControl .right-tab-list .nav-pills li.active::after {
             display: none;
@@ -2059,11 +2077,14 @@ font-family: 'Nunito Sans', sans-serif;
         .beautiful-sec-main .tabControl .right-tab-list .nav-pills li.active a::after {
             display: none;
         }
+        .beautiful-sec-main .tabControl .right-tab-list .nav-pills li.active a {
+            background: transparent;
+        }
     }
     
-    @media(max-width:479px) {
-        .beautiful-sec-main .tabControl .right-tab-list {
-            min-width: 100%;
+    @media(max-width:567px) {
+        .beautiful-sec-main .tabControl .right-tab-list #scroll-bar-custom {
+            max-width: 300px;
         }
     }
     /* beautiful-sec-main E */
@@ -2909,3 +2930,21 @@ font-family: 'Nunito Sans', sans-serif;
         }
     }
     /* Footer css E */
+    /* Team Listing S */
+    
+    .team-list-main .item-list {
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0px 6px 20px #68686829;
+    }
+    
+    .team-list-main .item-list .thumbnail_container {
+        padding-bottom: 123.5%;
+    }
+    
+    .team-list-main .item-list .item-box a .title {
+        color: #001821;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    /* Team Listing E */

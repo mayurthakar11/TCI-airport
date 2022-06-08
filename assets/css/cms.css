@@ -839,7 +839,7 @@ body ol {
     display: inline-block;
     padding-right: 5px;
     padding-left: 5px;
-    color: #cbb58c;
+    color: #ffffff;
     content: "/";
 }
 
@@ -856,7 +856,7 @@ body ol {
     letter-spacing: 1px;
     font-size: 14px;
     font-weight: 600;
-    color: #01a8e7;
+    color: #ffffff;
     text-transform: uppercase;
 }
 
@@ -870,7 +870,7 @@ body ol {
 .i-b_c_back-to-list a {
     font-size: 14px;
     font-weight: 400;
-    color: #cbb58c;
+    color: #01A8E7;
     line-height: 110%;
     text-transform: capitalize;
 }
