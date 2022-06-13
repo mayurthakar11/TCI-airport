@@ -22,28 +22,32 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before {
+.icon-share:before {
     content: "\e900";
 }
 
-.icon-search:before {
+.icon-mail:before {
     content: "\e901";
 }
 
-.icon-close:before {
+.icon-search:before {
     content: "\e902";
 }
 
-.icon-bottom-arrow:before {
+.icon-close:before {
     content: "\e903";
 }
 
-.icon-chat:before {
+.icon-bottom-arrow:before {
     content: "\e904";
 }
 
-.icon-clock:before {
+.icon-chat:before {
     content: "\e905";
+}
+
+.icon-clock:before {
+    content: "\e906";
 }
 
 .icon-facebook:before {

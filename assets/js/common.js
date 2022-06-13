@@ -59,6 +59,39 @@ $(window).on("load resize", function() {
             }
         }
     });
+
+});
+$(window).on("load resize", function() {
+    var owl = $('.left-tab-list.owl-carousel');
+    owl.owlCarousel({
+        margin: 20,
+        loop: true,
+        nav: false,
+        dots: true,
+        lazyLoad: true,
+        autoplay: true,
+        smartSpeed: 1000,
+        autoHeight: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            480: {
+                items: 1,
+            },
+            768: {
+                items: 1,
+            },
+            992: {
+                items: 1,
+            }
+        }
+    });
+    if ($(window).width() < 991) {
+        owl.trigger('initialize.owl.carousel');
+    } else {
+        owl.trigger('destroy.owl.carousel');
+    }
 });
 
 // calender S
