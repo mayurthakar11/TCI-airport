@@ -651,7 +651,7 @@ body ol {
 
 .cms img {
     display: flex;
-    width: 40%;
+    width: 50%;
     margin: 15px 25px 15px 0;
 }
 
@@ -846,7 +846,7 @@ body ol {
     font-size: 14px;
     font-weight: 600;
     line-height: 150%;
-    color: #6e71ff;
+    color: #01A8E7;
     letter-spacing: 1px;
 }
 
@@ -933,7 +933,7 @@ body ol {
         color: #2F3192;
     }
     .jp-breadcrumb li a:hover {
-        color: #01a8e7;
+        color: #ffffff;
     }
     .jp-pagination li a:hover {
         color: #01a8e7;
@@ -1037,6 +1037,35 @@ body ol {
 
 /* share button css s */
 
+.share-button {
+    text-align: right;
+    padding-bottom: 20px;
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.share-button .dropdown-toggle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.share-button .dropdown-toggle i {
+    font-size: 18px;
+    color: #ffffff;
+    background: #2f3192;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: -3px;
+    margin-left: 5px;
+}
+
 .share-button ul li+li {
     margin-left: 10px;
     margin-top: 0;
@@ -1054,7 +1083,7 @@ body ol {
     position: absolute;
     background: #02222e;
     left: auto !important;
-    right: -20px;
+    right: -10px;
     margin-top: 10px;
     border-radius: 20px;
     padding: 5px 10px !important;

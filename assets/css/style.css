@@ -386,7 +386,7 @@ p {
         opacity: 1;
     }
     .owl-carousel .owl-nav i:hover {
-        color: #01a8e7;
+        background: #2f3192;
     }
 }
 
@@ -405,7 +405,7 @@ p {
     }
 }
 
-@media(max-width: 1199px) {
+@media(max-width:1199px) {
     .owl-carousel .owl-nav {
         opacity: 1;
         top: auto;
@@ -415,10 +415,11 @@ p {
         width: 0%;
         margin: auto;
     }
-    .owl-carousel .owl-nav i {
-        color: #ffffff;
-        background: #01A8E7;
-    }
+}
+
+.owl-carousel .owl-nav i {
+    color: #ffffff;
+    background: #01A8E7;
 }
 
 .buorg {
@@ -1719,23 +1720,6 @@ textarea.form-control {
     z-index: -1;
 }
 
-.inner-page-conatiner .share-button {
-    text-align: right;
-    padding-bottom: 30px;
-}
-
-.inner-page-conatiner .share-button a {
-    font-size: 22px;
-    color: #ffffff;
-    background: #022330;
-    border-radius: 20px;
-    width: 30px;
-    height: 30px;
-    line-height: 35px;
-    display: inline-block;
-    text-align: center;
-}
-
 @media(max-width:1199px) {
     .inner-page-conatiner {
         padding: 30px 0;
@@ -2402,8 +2386,8 @@ textarea.form-control {
 }
 
 .info-slider-main.owl-carousel .owl-stage-outer {
-    padding: 25px;
-    margin: -25px;
+    padding: 14px;
+    margin: -14px;
 }
 
 .info-slider-main .image .thumbnail_container {
@@ -3053,7 +3037,6 @@ textarea.form-control {
 
 .detail-main .detail-content {
     display: flex;
-    align-items: center;
 }
 
 .detail-main .detail-content .title {
@@ -3063,6 +3046,11 @@ textarea.form-control {
 .detail-main .detail-content img {
     border: 1px solid #ece3e3;
     padding: 4px;
+    margin: 0px 25px 15px 0;
+}
+
+.detail-main .detail-content .right-side {
+    width: 50%;
 }
 
 .detail-main .detail-content .designation {
@@ -3078,12 +3066,15 @@ textarea.form-control {
     display: block;
     color: #001821;
     font-size: 14px;
-    margin: 0 0 10px;
+    margin: 10px 0;
 }
 
 @media(max-width:767px) {
     .detail-main .detail-content {
         flex-direction: column;
+    }
+    .detail-main .detail-content .right-side {
+        width: 100%;
     }
 }
 
@@ -3102,6 +3093,68 @@ textarea.form-control {
 
 
 /* Event Listing S */
+
+.event-radio {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.event-radio .option {
+    background: #fff;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 1px solid #2F3192;
+    transition: all 0.3s ease;
+}
+
+.event-radio .option-1 {
+    padding: 10px 60px 10px 20px;
+}
+
+.event-radio .option-2 {
+    margin-left: -50px;
+}
+
+.event-radio input[type="radio"] {
+    display: none !important;
+}
+
+.event-radio #option-1:checked:checked~.option-1,
+.event-radio #option-2:checked:checked~.option-2 {
+    border-color: #2f3192;
+    background: #2f3192;
+}
+
+.event-radio #option-1:checked:checked~.option-1 .dot,
+.event-radio #option-2:checked:checked~.option-2 .dot {
+    background: #fff;
+}
+
+.event-radio #option-1:checked:checked~.option-1 .dot::before,
+.event-radio #option-2:checked:checked~.option-2 .dot::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.event-radio .option span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2f3192;
+}
+
+.event-radio #option-1:checked:checked~.option-1 span,
+.event-radio #option-2:checked:checked~.option-2 span {
+    color: #fff;
+}
 
 .event-list-main .date-box-main .box {
     min-width: 500px;
@@ -3162,7 +3215,7 @@ textarea.form-control {
 
 .event-list-main .date-box-main .right-box .label-event {
     position: absolute;
-    top: 0;
+    top: 1px;
     background: #C5EFFF;
     padding: 5px 10px;
     color: #01a8e7;
@@ -3176,6 +3229,7 @@ textarea.form-control {
 .event-list-main .date-box-main .right-box .desc {
     display: flex;
     flex-direction: column;
+    padding-top: 25px;
 }
 
 .event-list-main .date-box-main .right-box .image .thumbnail_container {
@@ -3192,6 +3246,10 @@ textarea.form-control {
     font-size: 14px;
     color: #001821;
     padding-top: 8px;
+}
+
+.event-list-main .date-box-main .right-box p {
+    margin-top: 10px;
 }
 
 .event-list-main .date-box-main .right-box .box-add i {
@@ -3211,8 +3269,11 @@ textarea.form-control {
     .event-list-main .date-box-main .right-box .image {
         margin-bottom: 20px;
     }
+    .event-list-main .date-box-main .right-box .desc {
+        padding-top: 0;
+    }
     .event-list-main .date-box-main .right-box .label-event {
-        right: 15px;
+        right: 30px;
     }
     .event-list-main .date-box-main .left-box {
         border-radius: 5px;
@@ -3331,6 +3392,12 @@ textarea.form-control {
     max-width: 160px;
 }
 
+@media(min-width:1200px) {
+    .contact-inner-main .contact-detail .list li a:hover {
+        color: #01a8e7;
+    }
+}
+
 @media(max-width:767px) {
     .contact-inner-main {
         flex-direction: column;
@@ -3351,3 +3418,181 @@ textarea.form-control {
 
 
 /* Contact E */
+
+
+/* Airport listing main S */
+
+.airport-list-main .info-box {
+    margin-bottom: 30px;
+}
+
+
+/* Airport listing main E */
+
+
+/* Airport Detail main S */
+
+.airport-detail .detail-content {
+    display: flex;
+}
+
+.airport-detail .title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.airport-detail .detail-content .left-side {
+    position: relative;
+    margin: 0 20px 0 0;
+}
+
+.airport-detail .detail-content .left-side .img-label {
+    position: absolute;
+    font-size: 14px;
+    color: #ffffff;
+    background: #01A8E7;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    padding: 7px 9px;
+}
+
+.airport-detail .detail-content img {
+    border: 1px solid #ece3e3;
+    padding: 4px;
+    margin: 0;
+    width: 100%;
+}
+
+.airport-detail .detail-content .right-side {
+    width: 50%;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px #68686829;
+    border: 1px solid rgba(0, 0, 0, .125);
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.airport-detail .detail-content .right-side::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-image: url(../images/team-bg.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    z-index: -1;
+    opacity: .8;
+}
+
+.airport-detail .detail-content .right-side .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #022330;
+    font-weight: 700;
+}
+
+.airport-detail .detail-content .right-side ul li {
+    font-size: 16px;
+    font-weight: 600;
+    color: #022330;
+}
+
+.airport-detail .detail-content .right-side ul li:before {
+    color: #01a8e7;
+}
+
+.airport-detail .detail-content .right-side ul li+li {
+    margin-top: 10px;
+}
+
+.airport-detail .contact-info {
+    position: relative;
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 6px 20px #68686829;
+    border-radius: 8px;
+    margin-top: 30px;
+    z-index: 1;
+}
+
+.airport-detail .contact-info::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 70px;
+    width: 7px;
+    background: #01A8E7;
+    border-radius: 0 5px 5px 0;
+    margin: auto;
+}
+
+.airport-detail .contact-info::after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    background-image: url(../images/plane-path.png);
+    width: 173px;
+    height: 157px;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: .1;
+}
+
+.airport-detail .contact-info .list li {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    color: #022330;
+}
+
+.airport-detail .contact-info .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #022330;
+    font-weight: 700;
+}
+
+.airport-detail .contact-info .list li+li {
+    margin-top: 20px;
+}
+
+.airport-detail .contact-info .list i {
+    margin-right: 20px;
+}
+
+.airport-detail .airport-desc {
+    margin-top: 30px;
+}
+
+@media(max-width:991px) {
+    .airport-detail .detail-content .left-side {
+        margin: 0 0 20px 0;
+    }
+    .airport-detail .detail-content {
+        flex-direction: column;
+    }
+    .airport-detail .detail-content .right-side {
+        width: 100%;
+    }
+}
+
+@media(max-width:767px) {
+    .airport-detail .detail-content .right-side ul li {
+        font-size: 14px;
+    }
+    .airport-detail .contact-info .list li {
+        font-size: 14px;
+    }
+}
+
+
+/* Airport Detal main E */
