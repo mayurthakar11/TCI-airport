@@ -1773,7 +1773,7 @@ textarea.form-control {
 
 .beautiful-sec-main .tabControl .right-tab-list {
     padding: 40px 35px;
-    background: url(../images/beauty-tab-bg.png);
+    background: url(../images/info-2.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 6px;
@@ -3041,12 +3041,35 @@ textarea.form-control {
 
 .detail-main .detail-content .title {
     font-size: 30px;
+    color: #2f3192;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 35px;
+}
+
+.detail-main .detail-content .title:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/title-shape.png);
+    width: 150px;
+    height: 43px;
+    background-repeat: no-repeat;
+    transform: rotate(10deg);
 }
 
 .detail-main .detail-content img {
     border: 1px solid #ece3e3;
     padding: 4px;
     margin: 0px 25px 15px 0;
+}
+
+.detail-main .detail-content .left-side {
+    width: 50%;
+    margin: 0 25px 25px 0;
 }
 
 .detail-main .detail-content .right-side {
@@ -3064,7 +3087,7 @@ textarea.form-control {
 
 .detail-main .detail-content .box-time {
     display: block;
-    color: #001821;
+    color: #01a8e7;
     font-size: 14px;
     margin: 10px 0;
 }
@@ -3072,6 +3095,10 @@ textarea.form-control {
 @media(max-width:767px) {
     .detail-main .detail-content {
         flex-direction: column;
+    }
+    .detail-main .detail-content .left-side {
+        width: 100%;
+        margin: 0 0 25px 0;
     }
     .detail-main .detail-content .right-side {
         width: 100%;
@@ -3130,8 +3157,8 @@ textarea.form-control {
 
 .event-radio #option-1:checked:checked~.option-1,
 .event-radio #option-2:checked:checked~.option-2 {
-    border-color: #2f3192;
-    background: #2f3192;
+    border-color: #01a8e7;
+    background: #01a8e7;
 }
 
 .event-radio #option-1:checked:checked~.option-1 .dot,
@@ -3216,20 +3243,22 @@ textarea.form-control {
 .event-list-main .date-box-main .right-box .label-event {
     position: absolute;
     top: 1px;
-    background: #C5EFFF;
+    background: #2F3192;
     padding: 5px 10px;
-    color: #01a8e7;
+    color: #ffffff;
     border-radius: 0 0 5px 5px;
 }
 
 .event-list-main .date-box-main .right-box .image {
     width: 250px;
+    margin-left: 20px;
 }
 
 .event-list-main .date-box-main .right-box .desc {
     display: flex;
     flex-direction: column;
     padding-top: 25px;
+    width: 100%;
 }
 
 .event-list-main .date-box-main .right-box .image .thumbnail_container {
@@ -3267,7 +3296,7 @@ textarea.form-control {
         margin-right: 5px;
     }
     .event-list-main .date-box-main .right-box .image {
-        margin-bottom: 20px;
+        margin: 0 0 20px;
     }
     .event-list-main .date-box-main .right-box .desc {
         padding-top: 0;
@@ -3305,7 +3334,7 @@ textarea.form-control {
 .contact-inner-main .contact-detail {
     position: relative;
     padding: 30px;
-    background: url(../images/beauty-tab-bg.png);
+    background: url(../images/info-2.png);
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0px 6px 20px #68686829;
@@ -3438,12 +3467,14 @@ textarea.form-control {
 
 .airport-detail .title {
     font-size: 30px;
+    color: #2f3192;
+    font-weight: 600;
     margin-bottom: 30px;
 }
 
 .airport-detail .detail-content .left-side {
     position: relative;
-    margin: 0 20px 0 0;
+    width: 50%;
 }
 
 .airport-detail .detail-content .left-side .img-label {
@@ -3473,6 +3504,7 @@ textarea.form-control {
     border-radius: 8px;
     position: relative;
     z-index: 1;
+    margin: 0 0 0 25px;
 }
 
 .airport-detail .detail-content .right-side::before {
@@ -3497,17 +3529,21 @@ textarea.form-control {
     font-weight: 700;
 }
 
-.airport-detail .detail-content .right-side ul li {
+.airport-detail .detail-content .right-side .main-list {
+    height: 200px;
+}
+
+.airport-detail .detail-content .right-side .airport-list li {
     font-size: 16px;
     font-weight: 600;
     color: #022330;
 }
 
-.airport-detail .detail-content .right-side ul li:before {
+.airport-detail .detail-content .right-side .airport-list li:before {
     color: #01a8e7;
 }
 
-.airport-detail .detail-content .right-side ul li+li {
+.airport-detail .detail-content .right-side .airport-list li+li {
     margin-top: 10px;
 }
 
@@ -3575,13 +3611,14 @@ textarea.form-control {
 
 @media(max-width:991px) {
     .airport-detail .detail-content .left-side {
-        margin: 0 0 20px 0;
+        width: 100%;
     }
     .airport-detail .detail-content {
         flex-direction: column;
     }
     .airport-detail .detail-content .right-side {
         width: 100%;
+        margin: 0 0 25px 0;
     }
 }
 
@@ -3596,3 +3633,73 @@ textarea.form-control {
 
 
 /* Airport Detal main E */
+
+
+/* mcustom scoll css */
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background: #022330 !important;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #01a8e7 !important;
+}
+
+
+/* useful listing S */
+
+.travelling-listing-main.travelling-sec .travel-box {
+    border: 0;
+    background: #ffffff;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, .125);
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.travelling-listing-main.travelling-sec .grid .grid-sizer {
+    display: none;
+}
+
+.travelling-listing-main.travelling-sec .grid .grid-item {
+    width: 50%;
+    list-style-type: none;
+    padding: 5px;
+    display: block;
+    border-radius: 10px;
+}
+
+.travelling-listing-main.travelling-sec .travel-box::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-image: url(../images/team-bg.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    z-index: -1;
+    opacity: .5;
+}
+
+.travelling-listing-main.travelling-sec .travel-box .box-desc {
+    min-height: 100%;
+}
+
+@media (max-width: 767px) {
+    .travelling-listing-main.travelling-sec .travel-box {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 568px) {
+    .travelling-listing-main.travelling-sec .grid .grid-item {
+        width: 100%;
+    }
+}
+
+
+/* useful listing E */

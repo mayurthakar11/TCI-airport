@@ -31,8 +31,8 @@ $(window).scroll(function() {
 /* Bootstrap Select S */
 
 $(window).on("load resize", function() {
-    var owl = $('.info-slider-main.owl-carousel');
-    owl.owlCarousel({
+    var owl1 = $('.info-slider-main.owl-carousel');
+    owl1.owlCarousel({
         margin: 30,
         loop: false,
         nav: true,
@@ -56,6 +56,33 @@ $(window).on("load resize", function() {
             },
             1200: {
                 items: 3,
+            }
+        }
+    });
+    var owl2 = $('.left-side.owl-carousel');
+    owl2.owlCarousel({
+        margin: 15,
+        loop: false,
+        nav: false,
+        dots: true,
+        lazyLoad: true,
+        autoplay: true,
+        smartSpeed: 1000,
+        autoHeight: true,
+        mouseDrag: false,
+        animateOut: 'fadeOut',
+        responsive: {
+            0: {
+                items: 1,
+            },
+            480: {
+                items: 1,
+            },
+            1024: {
+                items: 1,
+            },
+            1200: {
+                items: 1,
             }
         }
     });
@@ -109,13 +136,17 @@ moment.locale("en", {
 // calender E
 
 
-// mcustom scollbar S
-$(window).on("load", function() {
-    $("#scroll-bar-custom").mCustomScrollbar({
-        axis: "x", // horizontal scrollbar s
-
-    });
-
+// isotop S
+$(window).on('load', function() {
+    setTimeout(function() {
+        $('.grid').isotope();
+    }, 1000);
 });
-
-// mcustom scollbar E
+$('.grid').isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+        columnWidth: '.grid-sizer'
+    }
+});
+// isotop E
