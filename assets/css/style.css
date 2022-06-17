@@ -2964,16 +2964,11 @@ textarea.form-control {
     text-align: center;
 }
 
-.team-list-main .item-list .item-box a {
+.team-list-main .item-list .item-box .title {
     color: #01a8e7;
     font-size: 16px;
     font-weight: 600;
-}
-
-.team-list-main .item-list .item-box a .title {
-    color: inherit;
-    font-size: inherit;
-    font-weight: inherit;
+    height: 40px;
 }
 
 .team-list-main .item-list .item-box .designation {
@@ -3020,12 +3015,20 @@ textarea.form-control {
 }
 
 @media(min-width:1200px) {
-    .team-list-main .item-list .item-box a:hover {
-        color: #ffffff;
-        background: #01A8E7;
-    }
     .team-list-main .item-list:hover {
         transform: translateY(-10px);
+    }
+}
+
+@media(max-width:767px) {
+    .team-list-main .item-list .item-box .title {
+        height: 100%;
+    }
+    .team-list-main .item-list .item-box .designation {
+        height: 100%;
+    }
+    .team-list-main .item-list .item-box .desc {
+        height: 100%;
     }
 }
 
@@ -3035,48 +3038,47 @@ textarea.form-control {
 
 /* Team Detail S */
 
-.detail-main .detail-content {
+.news-detail-main .detail-content {
     display: flex;
 }
 
-.detail-main .detail-content .title {
+.news-detail-main .detail-content .title {
     font-size: 30px;
-    color: #2f3192;
+    color: #01a8e7;
     font-weight: 600;
     position: relative;
     margin-bottom: 10px;
-    padding-bottom: 35px;
 }
 
-.detail-main .detail-content .title:after {
+
+/* .news-detail-main .detail-content .title:after {
     position: absolute;
     content: '';
     bottom: 0;
     left: 0;
     right: 0;
     background-image: url(../images/title-shape.png);
-    width: 150px;
-    height: 43px;
+    width: 193px;
+    height: 40px;
     background-repeat: no-repeat;
-    transform: rotate(10deg);
-}
+} */
 
-.detail-main .detail-content img {
+.news-detail-main .detail-content img {
     border: 1px solid #ece3e3;
     padding: 4px;
     margin: 0px 25px 15px 0;
 }
 
-.detail-main .detail-content .left-side {
+.news-detail-main .detail-content .left-side {
     width: 50%;
     margin: 0 25px 25px 0;
 }
 
-.detail-main .detail-content .right-side {
+.news-detail-main .detail-content .right-side {
     width: 50%;
 }
 
-.detail-main .detail-content .designation {
+.news-detail-main .detail-content .designation {
     font-size: 16px;
     font-weight: 700;
     display: block;
@@ -3085,22 +3087,23 @@ textarea.form-control {
     line-height: 140%;
 }
 
-.detail-main .detail-content .box-time {
+.news-detail-main .detail-content .box-time {
     display: block;
-    color: #01a8e7;
+    color: #2f3192;
     font-size: 14px;
     margin: 10px 0;
+    font-weight: 600;
 }
 
 @media(max-width:767px) {
-    .detail-main .detail-content {
+    .news-detail-main .detail-content {
         flex-direction: column;
     }
-    .detail-main .detail-content .left-side {
+    .news-detail-main .detail-content .left-side {
         width: 100%;
         margin: 0 0 25px 0;
     }
-    .detail-main .detail-content .right-side {
+    .news-detail-main .detail-content .right-side {
         width: 100%;
     }
 }
@@ -3421,6 +3424,43 @@ textarea.form-control {
     max-width: 160px;
 }
 
+.contact-info-sec {
+    background: #ffffff;
+}
+
+.contact-info-sec.information-sec .small-title {
+    color: #001821;
+}
+
+.contact-info-sec.information-sec .section-title {
+    color: #001821;
+}
+
+.contact-info-sec.information-sec .info-box .box-content .desc {
+    height: 100%;
+}
+
+.contact-info-sec.information-sec .info-box .box-content .desc ul li {
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    color: #022330;
+}
+
+.contact-info-sec.information-sec .info-box .box-content .desc ul li+li {
+    margin-top: 10px;
+}
+
+.contact-info-sec.information-sec .info-box .box-content .desc ul li.add {
+    height: 40px;
+}
+
+.contact-info-sec.information-sec .info-box .box-content .desc ul li i {
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 @media(min-width:1200px) {
     .contact-inner-main .contact-detail .list li a:hover {
         color: #01a8e7;
@@ -3603,6 +3643,7 @@ textarea.form-control {
 
 .airport-detail .contact-info .list i {
     margin-right: 20px;
+    line-height: 25px;
 }
 
 .airport-detail .airport-desc {
@@ -3703,3 +3744,229 @@ textarea.form-control {
 
 
 /* useful listing E */
+
+
+/* Event-detail S */
+
+.event-detail-main .detail-content {
+    display: flex;
+}
+
+.event-detail-main .title {
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.event-detail-main .left-side {
+    width: 60%;
+    margin: 0 25px 25px 0;
+}
+
+.event-detail-main .left-side .eve-date .image {
+    position: relative;
+    z-index: 1;
+}
+
+.event-detail-main .left-side .eve-date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #022330;
+    padding: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.event-detail-main .left-side .eve-date::before {
+    position: absolute;
+    content: '';
+    width: 61px;
+    height: 50px;
+    top: 0;
+    left: 50px;
+    background-image: url(../images/plane-eve-bg.png);
+    z-index: -1;
+}
+
+.event-detail-main .left-side img {
+    margin: 0;
+}
+
+.event-detail-main .right-side {
+    width: 40%;
+}
+
+.event-detail-main .right-side .small-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.event-detail-main .right-side .list-event {
+    margin-top: 10px;
+}
+
+.event-detail-main .right-side .list-event li::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 30px;
+    width: 4px;
+    background: #01A8E7;
+    border-radius: 0 5px 5px 0;
+    margin: auto;
+}
+
+.event-detail-main .right-side .list-event li {
+    position: relative;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 20px 15px 20px 45px;
+    box-shadow: 0px 6px 20px #68686829;
+    margin-top: 20px;
+    color: #022330;
+    font-weight: 600;
+    position: relative;
+    overflow: visible;
+}
+
+.event-detail-main .right-side .list-event li i {
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.event-detail-main .right-side .list-event li .label-date {
+    position: absolute;
+    top: -11px;
+    left: 0;
+    font-size: 14px;
+    z-index: 99999;
+    color: #01a8e7;
+    background: #fff;
+    padding: 0 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.event-detail-main .event-desc {
+    color: #022330;
+    font-size: 16px;
+    line-height: 160%;
+    padding: 30px;
+    border-radius: 6px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    box-shadow: 0px 6px 20px #68686829;
+}
+
+.upcoming-eve-detail {
+    padding-top: 50px;
+}
+
+.upcoming-eve-detail .title {
+    text-align: center;
+    font-weight: 700;
+}
+
+.upcoming-eve-detail .title span {
+    color: #01A8E7;
+}
+
+.upcoming-eve-detail .content-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.upcoming-eve-detail .box {
+    max-width: 550px;
+    display: flex;
+    background: #ffffff;
+    border: 1px solid #01A8E7;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.upcoming-eve-detail .left-box {
+    text-align: center;
+    background: #01A8E7;
+    border-radius: 8px 0 0 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.upcoming-eve-detail .left-box .date-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.upcoming-eve-detail .left-box .date-title span {
+    font-size: 16px;
+    display: block;
+    line-height: 100%;
+    color: #ffffff;
+}
+
+.upcoming-eve-detail .right-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 25px;
+}
+
+.upcoming-eve-detail .right-box .box-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #001821;
+}
+
+.upcoming-eve-detail .right-box .box-add {
+    font-size: 14px;
+    color: #001821;
+    padding-top: 8px;
+}
+
+.upcoming-eve-detail .right-box .box-add i {
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+@media (max-width: 991px) {
+    .upcoming-eve-detail .box {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .event-detail-main .detail-content {
+        flex-direction: column;
+    }
+    .event-detail-main .left-side {
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
+    .event-detail-main .right-side {
+        width: 100%;
+    }
+    .event-detail-main .event-desc {
+        margin-top: 30px;
+    }
+    .upcoming-eve-detail {
+        padding-top: 30px;
+    }
+    .upcoming-eve-detail .title {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Event-detail E */

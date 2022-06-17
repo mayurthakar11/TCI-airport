@@ -804,8 +804,13 @@
 <script>
     $(document).ready(function() {
         AOS.init({
+            duration: 1e3,
+            disable: "mobile",
             once: true,
-            disable: 'mobile'
+            offset: 20,
+            startEvent: "DOMContentLoaded",
+            delay: 0,
+            easing: "ease-out-back"
         });
 
     });
